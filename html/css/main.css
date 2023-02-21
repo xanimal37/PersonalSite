@@ -3,3 +3,7 @@ html {
 	color:white;
 }
 
+img {
+	max-width:400px;
+}
+
