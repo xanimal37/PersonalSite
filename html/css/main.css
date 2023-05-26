@@ -1,9 +1,139 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
 html {
-	background-color:black;
+	line-height: 1.6;
+	background-color:#222222;
 	color:white;
 }
 
-img {
-	max-width:400px;
+body {
+	margin:auto;
+	display: flex;
+	flex-direction:column;
+
+	max-width:1200px;
 }
 
+nav {
+	padding:.6em;
+}
+
+nav ul {
+	display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	justify-content: space-around;
+	
+}
+
+nav a {
+	padding:.4em;
+}
+
+nav a:hover {
+	color: #333333;
+	border:3px solid #88cc00;
+	background-color:#FCCC21;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2{
+	text-align:center;
+	background-color:#ffffff;
+	color:#333333;
+	font-size:2rem;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+a {
+	color:#FCCC21;
+	text-decoration: none;
+}
+
+#skills_container {
+	padding:1em;
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+} 
+
+#skills_container div {
+	border-left:2px solid white;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+#skillsMenu ul {
+	padding:1em;
+	background-color:#000000;
+	color:#ffffff;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+#skillsMenu ul li {
+	margin: 0 .8em 0 .8em;
+}
+
+.text_div {
+	padding: 2em;
+}
+
+li.proficient::after {
+	content: " +++";
+	color: #88cc00;
+}
+
+li.competent::after {
+	content: " ++";
+	color:#FCCC21;
+}
+
+li.familiar::after{
+	content: " +";
+	color:#888888;
+}
+
+#education {
+	display:flex;
+	flex-direction: column;
+}
+
+#education ul {
+	list-style-type: circle;
+}
+
+.school {
+	display:flex;
+	flex-direction: row;
+	padding:.6em;
+}
+
+.school div {
+	padding:1em;
+	flex:2;
+}
+
+.school div:first-child {
+	text-align:right;
+	border-right:1px solid white;
+	flex:1;
+}
+
+footer {
+	padding:1em;
+}
